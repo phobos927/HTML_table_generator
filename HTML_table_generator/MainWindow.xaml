@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HTML_table_generator"
         mc:Ignorable="d"
-        Title="HTML Table Generator" Height="350" Width="525">
+        Title="HTML Table Generator" Height="368.895" Width="543.895" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <Button x:Name="button" Content="Выбрать каталог с фото" HorizontalAlignment="Left" Margin="180,24,0,0" VerticalAlignment="Top" Width="157" Height="33" Click="button_Click"/>
         <Button x:Name="button1" Content="Сгенерировать код" HorizontalAlignment="Left" Margin="180,269,0,0" VerticalAlignment="Top" Width="157" Click="button1_Click" Height="40"/>
@@ -17,6 +17,8 @@
         <Label x:Name="label2" Content="Относительный путь на сервере" HorizontalAlignment="Left" Margin="115,141,0,0" VerticalAlignment="Top" Width="274"/>
         <TextBox x:Name="textBoxС" HorizontalAlignment="Left" Height="30" Margin="213,229,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="92"/>
         <Label x:Name="label_Copy" Content="Количество столбцов" HorizontalAlignment="Left" Margin="194,202,0,0" VerticalAlignment="Top" Width="141"/>
+        <Button x:Name="button2" Content="Открыть файл" HorizontalAlignment="Left" Margin="371,269,0,0" VerticalAlignment="Top" Width="136" Height="40" Click="button2_Click"/>
+
 
     </Grid>
 </Window>

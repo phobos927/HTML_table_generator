@@ -16,6 +16,7 @@ using System.IO;
 using WPFFolderBrowser;
 
 
+
 namespace HTML_table_generator
 {
     /// <summary>
@@ -32,6 +33,7 @@ namespace HTML_table_generator
         private void button_Click(object sender, RoutedEventArgs e)
         {
             WPFFolderBrowserDialog open = new WPFFolderBrowserDialog();
+            open.ShowPlacesList = true;
             bool sd = Convert.ToBoolean(open.ShowDialog());
             if (sd)
             {
@@ -57,7 +59,11 @@ namespace HTML_table_generator
                     foreach (string img in imgmass)
                     {
                         schet2++;
-                        if ((img.Substring(img.Length - 4) == ".jpg") || (img.Substring(img.Length - 4) == ".png") || (img.Substring(img.Length - 4) == ".gif"))
+                        if ((img.Substring(img.Length - 4) == ".jpg") || (img.Substring(img.Length - 4) == ".png") || (img.Substring(img.Length - 4) == ".gif")
+                            || (img.Substring(img.Length - 4) == ".JPG") || (img.Substring(img.Length - 4) == ".bmp") || (img.Substring(img.Length - 4) == ".PNG")
+                            || (img.Substring(img.Length - 4) == ".GIF") || (img.Substring(img.Length - 4) == ".BMP") || (img.Substring(img.Length - 5) == ".jpeg")
+                            || (img.Substring(img.Length - 5) == ".JPEG")
+                            )
                         {
                             schet++;
                            
@@ -113,6 +119,14 @@ namespace HTML_table_generator
             else { MessageBox.Show("Вы не выбрали папку"); }
 
             }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFile Code = new OpenFile();
+            Code.Owner = this;
+            Code.Visibility = System.Windows.Visibility.Visible;
+            Code.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
         }
+    }
     }
 
