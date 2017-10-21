@@ -1,12 +1,22 @@
-﻿<Window x:Class="HTML_table_generator.MainWindow"
+﻿<Window x:Name="MainWindow1" x:Class="HTML_table_generator.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HTML_table_generator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="HTML Table Generator" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="button" Content="Выбрать каталог с фото" HorizontalAlignment="Left" Margin="180,24,0,0" VerticalAlignment="Top" Width="157" Height="33" Click="button_Click"/>
+        <Button x:Name="button1" Content="Сгенерировать код" HorizontalAlignment="Left" Margin="180,269,0,0" VerticalAlignment="Top" Width="157" Click="button1_Click" Height="40"/>
+        <TextBox x:Name="textBoxW" HorizontalAlignment="Left" Height="30" Margin="115,101,0,0" TextWrapping="Wrap" Text="150" VerticalAlignment="Top" Width="92"/>
+        <TextBox x:Name="textBoxH" HorizontalAlignment="Left" Height="30" Margin="297,101,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="92"/>
+        <TextBox x:Name="textBoxP" HorizontalAlignment="Left" Height="21" Margin="115,172,0,0" TextWrapping="Wrap" Text="upload/img" VerticalAlignment="Top" Width="274"/>
+        <Label x:Name="label" Content="Ширина/Width" HorizontalAlignment="Left" Margin="115,70,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label x:Name="label1" Content="Высота/Height" HorizontalAlignment="Left" Margin="297,70,0,0" VerticalAlignment="Top" Width="92"/>
+        <Label x:Name="label2" Content="Относительный путь на сервере" HorizontalAlignment="Left" Margin="115,141,0,0" VerticalAlignment="Top" Width="274"/>
+        <TextBox x:Name="textBoxС" HorizontalAlignment="Left" Height="30" Margin="213,229,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="92"/>
+        <Label x:Name="label_Copy" Content="Количество столбцов" HorizontalAlignment="Left" Margin="194,202,0,0" VerticalAlignment="Top" Width="141"/>
+
     </Grid>
 </Window>
