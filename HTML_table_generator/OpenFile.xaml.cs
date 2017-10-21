@@ -27,6 +27,7 @@ namespace HTML_table_generator
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            
             TextRange range;
             System.IO.FileStream fStream;
 
@@ -38,6 +39,13 @@ namespace HTML_table_generator
 
                 fStream.Close();
             }
+        }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+         
+           
+            
         }
     }
 }

@@ -5,13 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HTML_table_generator"
         mc:Ignorable="d"
-        Title="Открытый файл" Loaded="Window_Loaded">
-    <Grid>
+        Title="Открытый файл" Loaded="Window_Loaded" SizeChanged="Window_SizeChanged">
+    <Grid x:Name="grid1">
         <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalScrollBarVisibility="Auto">
             <FlowDocument>
-                <Paragraph>
-                    <Run Text=""/>
-                </Paragraph>
+                <Paragraph/>
             </FlowDocument>
         </RichTextBox>
 
